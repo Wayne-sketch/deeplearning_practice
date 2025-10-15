@@ -2,7 +2,7 @@
 Author: ctx cuitongxin201024@163.com
 Date: 2025-10-15 00:14:44
 LastEditors: ctx cuitongxin201024@163.com
-LastEditTime: 2025-10-15 01:11:13
+LastEditTime: 2025-10-15 22:37:59
 FilePath: \deeplearning_practice\linear_regression.py
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 '''
@@ -32,7 +32,7 @@ def load_array(data_arrays, batch_size, is_train=True):
 batch_size = 100
 data_iter = load_array((features, labels), batch_size)
 
-next(iter(data_iter))
+# next(iter(data_iter))
 
 # 定义模型
 net = nn.Sequential(nn.Linear(2, 1))
